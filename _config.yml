@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: alpha-dust
+theme: jekyll
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -72,3 +72,24 @@ deploy:
   repo: https://github.com/Bangood/blog.git
   branch: gh-pages
   message: 'public'
+
+
+feed:
+  type: atom
+  path: /atom.xml
+  limit: 20
+
+jekyll:
+  project: false
+  selfIntro: true
+  sign_image: image/bear.svg
+
+  # Social
+social:
+  github: https://github.com/xxxxxx
+  coding: https://coding.net/u/xxxxxx
+  weibo: http://weibo.com/xxxxxx
+
+  # Analytics
+google_analytics: UA-80781234-1
+baidu_analytics: //hm.baidu.com/hm.js?ee75cf111111aa99f8540efa2570970
