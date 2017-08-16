@@ -5,3 +5,9 @@ tags:
 ---
 ## 技术栈
 - Nodejs ()
+
+Thanks:
+
+<a href="https://hexo.io">Hexo</a>,
+        <a href="https://github.com/">GitHub</a>,
+        <a href="https://jekyllrb.com/">Jekyll</a>
