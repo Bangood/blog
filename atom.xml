@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>风雨楼</title>
+  <subtitle>倚楼听风雨，淡看江湖路</subtitle>
+  <link href="/blog/atom.xml" rel="self"/>
+  
+  <link href="https://Bangood.github.io/"/>
+  <updated>2017-08-16T04:27:51.558Z</updated>
+  <id>https://Bangood.github.io/</id>
+  
+  <author>
+    <name>Bangood</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>个人简历</title>
+    <link href="https://Bangood.github.io/2017/04/14/resume/"/>
+    <id>https://Bangood.github.io/2017/04/14/resume/</id>
+    <published>2017-04-14T08:00:08.000Z</published>
+    <updated>2017-08-16T04:27:51.558Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><ul>
+<li>Nodejs ()</li>
+</ul>
+<p>Thanks:</p>
+<p><a href="https://hexo.io" target="_blank" rel="external">Hexo</a>,<br>        <a href="https://github.com/" target="_blank" rel="external">GitHub</a>,<br>        <a href="https://jekyllrb.com/" target="_blank" rel="external">Jekyll</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;技术栈&quot;&gt;&lt;a href=&quot;#技术栈&quot; class=&quot;headerlink&quot; title=&quot;技术栈&quot;&gt;&lt;/a&gt;技术栈&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Nodejs ()&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thanks:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://hexo
+    
+    </summary>
+    
+    
+      <category term="ss" scheme="https://Bangood.github.io/tags/ss/"/>
+    
+  </entry>
+  
+</feed>
