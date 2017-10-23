@@ -74,21 +74,20 @@ deploy:
   message: 'public'
 
 
-feed:
-  type: atom
-  path: /atom.xml
-  limit: 20
+#feed:
+#  type: atom
+#  path: /atom.xml
+#  limit: 20
 
 jekyll:
   project: false
-  selfIntro: true
-  sign_image: image/bear.svg
+#  selfIntro: true
+#  sign_image: image/bear.svg
 
   # Social
 social:
-  github: https://github.com/xxxxxx
-  coding: https://coding.net/u/xxxxxx
-  weibo: http://weibo.com/xxxxxx
+  github: https://github.com/Bangood
+#  weibo: http://weibo.com/xxxxxx
 
   # Analytics
 google_analytics: UA-80781234-1
