@@ -1,6 +1,6 @@
 menu:
     home: /blog/
-    blog: archives/
+    blog: /blog/archives/
 
 default:
     title: Bangood
