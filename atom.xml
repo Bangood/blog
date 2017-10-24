@@ -4,9 +4,9 @@
   <subtitle>倚楼听风雨，淡看江湖路</subtitle>
   <link href="/blog/atom.xml" rel="self"/>
   
-  <link href="https://Bangood.github.io/"/>
+  <link href="https://Bangood.github.io/blog/"/>
   <updated>2017-08-16T04:27:51.558Z</updated>
-  <id>https://Bangood.github.io/</id>
+  <id>https://Bangood.github.io/blog/</id>
   
   <author>
     <name>Bangood</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>个人简历</title>
-    <link href="https://Bangood.github.io/2017/04/14/resume/"/>
-    <id>https://Bangood.github.io/2017/04/14/resume/</id>
+    <link href="https://Bangood.github.io/blog/2017/04/14/resume/"/>
+    <id>https://Bangood.github.io/blog/2017/04/14/resume/</id>
     <published>2017-04-14T08:00:08.000Z</published>
     <updated>2017-08-16T04:27:51.558Z</updated>
     
@@ -40,7 +40,7 @@
     </summary>
     
     
-      <category term="ss" scheme="https://Bangood.github.io/tags/ss/"/>
+      <category term="ss" scheme="https://Bangood.github.io/blog/tags/ss/"/>
     
   </entry>
   
