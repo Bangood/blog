@@ -51,11 +51,18 @@
 <p>根据网络环境的不同，这个项目初始化过程所需时间也不同。<br>当初始化结束后，我们就切换到我们的项目目录（我的是<code>D:\workspace\Bangood\HYP2017&gt;</code>)。<br>好，这个时候，我们就已经完成了我们的第一步，初始化了一个基本的项目，以上步骤官网的<a href="https://angular.io/guide/quickstart" target="_blank" rel="external">QuickStart</a>更详细。<br>让我们使用如下命令来看看效果，获得一点微乎其微的成就感吧。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ng serve --open</div></pre></td></tr></table></figure>
 <p>稍等片刻，你的浏览器应该就会自动打开<code>http://localhost:4200/</code>这个页面，如果你在你的浏览器里看到了以下页面，那么恭喜你，你已经迈出了我们的第一步。</p>
+<p><span id="image1"></span></p>
 <p><img src="/blog/images/2000003/0.png" alt=""></p>
+<h5 style="text-align: center;">图1</h5>
+
 <h2 id="照搬ngx-admin的目录结构"><a href="#照搬ngx-admin的目录结构" class="headerlink" title="照搬ngx-admin的目录结构"></a>照搬ngx-admin的目录结构</h2><p>既然我们是以<a href="https://github.com/akveo/ngx-admin" target="_blank" rel="external">ngx-admin</a>为蓝本，那么我们就先把它项目中最基本的东西复制过来。</p>
 <p>我们先复制它的目录结构，我们现在主要需要的是<code>src</code>目录下的内容。</p>
 <p>对比一下我们已有的项目结构，和<code>ngx-admin</code>的项目结构，想想有什么不同（就算想不出也没关系，这太正常不过了）。二话不说，先把文件夹建起，里面的文件先不管，当我们用到的时候，再逐一添加，这样好让我们能循序渐进的了解怎么完成这么一个项目。</p>
 <p>你看，我不知道花了多少分钟，非常操蛋的一个一个把文件夹创建完了，我之所以一个一个的创建是因为，我刚刚看了些英文文档，看得头有点胀，所以这样无聊的放松下，又可以对<code>ngx-admin</code>有一个最最基本的认识。</p>
+<p><span id="image2"></span></p>
 <p><img src="/blog/images/2000003/3.png" alt=""></p>
+<h5 style="text-align: center;">图2</h5>
+
 <p>其实创建的这些文件夹在以后我们可能很多都用不到，那就等以后再删除吧。ps:在这里可能会有睿智（懒）的程序员把<code>ngx-admin</code>项目克隆到本地，然后用脚本删除里面的所有文件只留文件夹，再将文件夹拷贝到我们的项目下（这算我能想到的比较懒得方式了，不知道诸位还有什么更懒得方式来复制文件夹目录结构）。</p>
+<p>这个时候我们再看我们的浏览器页面，是没有任何变化的（见<a href="#image1">图1</a>），因为我们只是添加了一些空文件夹，没有修改任何的代码。</p>
 </div></article><div class="pagination"><span class="pagination-prev">PREV</span><span class="pagination-next">NEXT</span></div><div class="comments"></div></div><aside class="sidebar"><h3>分类标签</h3><ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/Angular5/">Angular5</a></li></ul><h3>最新文章</h3><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/blog/2017/12/01/2000004-实例式探索Angular5最佳实践/">实例式探索Angular5最佳实践</a></li></ul></aside></section></div><div class="extra"></div><footer class="footer"><div class="row-flex-row limit-width vh-center"><div class="copyright"><P>© 2017 <a href="/">Bangood</P></div><div class="power"><p></p></div></div></footer><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-80781234-1",'auto');ga('send','pageview');</script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?ee75cf111111aa99f8540efa2570970";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></body></html>
