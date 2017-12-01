@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://Bangood.github.io/blog/"/>
-  <updated>2017-12-01T03:25:29.125Z</updated>
+  <updated>2017-12-01T04:55:18.511Z</updated>
   <id>https://Bangood.github.io/blog/</id>
   
   <author>
@@ -20,316 +20,70 @@
     <link href="https://Bangood.github.io/blog/2017/12/01/2000004-%E5%AE%9E%E4%BE%8B%E5%BC%8F%E6%8E%A2%E7%B4%A2Angular5%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/"/>
     <id>https://Bangood.github.io/blog/2017/12/01/2000004-实例式探索Angular5最佳实践/</id>
     <published>2017-12-01T02:42:45.000Z</published>
-    <updated>2017-12-01T03:25:29.125Z</updated>
+    <updated>2017-12-01T04:55:18.511Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>作为一个曾经的新手，我深知在面对无比庞大的Angular体系时，我曾经最需要的是什么。<br>不是Angular是什么，这在<a href="https://angular.io" target="_blank" rel="external">Angular</a>的官网上已经说得很清楚了。<br>不是Angular与其他框架（React、Vue、Riot、Knockout、Ember等）有什么不同，这在网上有很多好的相关文章，例如Vue官网上的这篇<a href="https://cn.vuejs.org/v2/guide/comparison.html" target="_blank" rel="external">对比其他框架</a>。<br>不是一个简单的实例教程，就像官网上的<a href="https://angular.io/tutorial" target="_blank" rel="external">Tour of Heroes</a>，这个实例太简单了，看完了对我写实际项目也没什么实质性帮助。<br>不是一个完整的没有教程的项目，这在<a href="https://github.com" target="_blank" rel="external">Github</a>上一搜一大堆，但对曾经处于新手的我来说，完全就是一脸懵逼，完全无从下口。这就好像你给了我一台冰箱，然后又给了我所有制作冰箱的工具和原材料，可我还是不知道怎么做出一台好的冰箱啊。<br>我当时最需要、最想要的是什么呢？<br>一个完整的项目，一个能有完整制作过程的完整项目。看完了，我能够快速的搭建自己的项目，而且这个项目最好组织结构能好点（别怪我心太野，我当时真就是这样想的）。<br>所以，我当时想找的不是是什么、为什么而是怎么做。<br>这可能和很多人的想法有点相悖，觉得你不知道了解其本质，你永远是小白。但在这个前端技术更新快、项目工期紧的前提下，我真的就想能先找到一个能先制作出成品的菜谱。<br>其实这和泡妞是一样的，我需要一个人能手把手的先教我怎么去追到一个女生，在追女生的过程中，我可以去慢慢学习一些技巧，后期再深化。不然我空有妞不知道怎么勾兑，或者空有满腔泡妞技能，却没妞，再或者有妞和一点点浅尝辄止的泡妞教程，这些都让我很难把到妹。<br>因此，我就想写这一篇可能会很长很长的教程，希望对有我曾经困惑的同学一点帮助。</p>
+    <content type="html"><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>作为一个曾经的新手，我深知在面对无比庞大的Angular体系时，我曾经最需要的是什么。</p>
+<p>不是Angular是什么，这在<a href="https://angular.io" target="_blank" rel="external">Angular</a>的官网上已经说得很清楚了。</p>
+<p>不是Angular与其他框架（React、Vue、Riot、Knockout、Ember等）有什么不同，这在网上有很多好的相关文章，例如Vue官网上的这篇<a href="https://cn.vuejs.org/v2/guide/comparison.html" target="_blank" rel="external">对比其他框架</a>。</p>
+<p>不是一个简单的实例教程，就像官网上的<a href="https://angular.io/tutorial" target="_blank" rel="external">Tour of Heroes</a>，这个实例太简单了，看完了对我写实际项目也没什么实质性帮助。</p>
+<p>不是一个完整的没有教程的项目，这在<a href="https://github.com" target="_blank" rel="external">Github</a>上一搜一大堆，但对曾经处于新手的我来说，完全就是一脸懵逼，完全无从下口。这就好像你给了我一台冰箱，然后又给了我所有制作冰箱的工具和原材料，可我还是不知道怎么做出一台好的冰箱啊。</p>
+<p>我当时最需要、最想要的是什么呢？</p>
+<p>一个完整的项目，一个能有完整制作过程的完整项目。看完了，我能够快速的搭建自己的项目，而且这个项目最好组织结构能好点（别怪我心太野，我当时真就是这样想的）。<br>所以，我当时想找的不是是什么、为什么而是怎么做。</p>
+<p>这可能和很多人的想法有点相悖，觉得你不知道了解其本质，你永远是小白。但在这个前端技术更新快、项目工期紧的前提下，我真的就想能先找到一个能先制作出成品的菜谱。</p>
+<p>其实这和泡妞是一样的，我需要一个人能手把手的先教我怎么去追到一个女生，在追女生的过程中，我可以去慢慢学习一些技巧，后期再深化。不然我空有妞不知道怎么勾兑，或者空有满腔泡妞技能，却没妞，再或者有妞和一点点浅尝辄止的泡妞教程，这些都让我很难把到妹。</p>
+<p>因此，我就想写这一篇可能会很长很长的教程，希望对有我曾经困惑的同学一点帮助，哪怕是能帮助到一个人，那也是极好的。</p>
+<h2 id="我的环境"><a href="#我的环境" class="headerlink" title="我的环境"></a>我的环境</h2><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>操作系统</code></td>
+<td>Windows10企业版</td>
+</tr>
+<tr>
+<td><code>Node</code></td>
+<td>9.2.0</td>
+</tr>
+<tr>
+<td><code>Npm</code></td>
+<td>5.5.1</td>
+</tr>
+<tr>
+<td><code>IDE</code></td>
+<td>WebStorm2017.1.4</td>
+</tr>
+<tr>
+<td><code>浏览器</code></td>
+<td>60.0.3080.5（正式版本）</td>
+</tr>
+<tr>
+<td><code>angular/cli</code></td>
+<td>1.5.4</td>
+</tr>
+</tbody>
+</table>
+<h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p>以<a href="https://github.com/akveo/ngx-admin" target="_blank" rel="external">ngx-admin</a>为蓝本，实现一个类似于英雄联盟英雄资料库的管理系统。</p>
+<h2 id="初始化项目"><a href="#初始化项目" class="headerlink" title="初始化项目"></a>初始化项目</h2><p>我使用<a href="https://github.com/angular/angular-cli" target="_blank" rel="external">Angular CLI</a>作为脚手架。<br>让我们先全局安装<code>1.5.4</code>版本的<code>Angualr CLI</code>。<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g @angular/cli@1.5.4</div></pre></td></tr></table></figure></p>
+<p>如果安装成功，在你的控制台输入<code>ng version</code>指令，你将得到<code>Angular CLI</code>的相关版本信息。<br>在你的控制台下切换到你喜欢的一个盘符下(我的是<code>D:\workspace\Bangood&gt;</code>)创建项目。<br>输入如下指令(我创建的项目名叫<code>HYP2017</code>)：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ng new HYP2017</div></pre></td></tr></table></figure></p>
+<p>根据网络环境的不同，这个项目初始化过程所需时间也不同。<br>当初始化结束后，我们就切换到我们的项目目录（我的是<code>D:\workspace\Bangood\HYP2017&gt;</code>)。<br>好，这个时候，我们就已经完成了我们的第一步，初始化了一个基本的项目，以上步骤官网的<a href="https://angular.io/guide/quickstart" target="_blank" rel="external">QuickStart</a>更详细。<br>让我们使用如下命令来看看效果，获得一点微乎其微的成就感吧。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ng serve --open</div></pre></td></tr></table></figure>
+<p>稍等片刻，你的浏览器应该就会自动打开<code>http://localhost:4200/</code>这个页面，如果你在你的浏览器里看到了以下页面，那么恭喜你，你已经迈出了我们的第一步。</p>
+<p><img src="/blog/images/2000003/0.png" alt=""></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;作为一个曾经的新手，我深知在面对无比庞大的Angular体系时，我曾经最需要的是什么。&lt;br&gt;不是Angular是什么，这在&lt;a href=
+      &lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;作为一个曾经的新手，我深知在面对无比庞大的Angular体系时，我曾经最需要的是什么。&lt;/p&gt;
+&lt;p&gt;不是Angular是什么，这在&lt;a h
     
     </summary>
     
     
       <category term="Angular5" scheme="https://Bangood.github.io/blog/tags/Angular5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>求知-探索-实例式学习Tensorflow</title>
-    <link href="https://Bangood.github.io/blog/2017/11/22/2000003-%E6%B1%82%E7%9F%A5-%E6%8E%A2%E7%B4%A2-%E5%AE%9E%E4%BE%8B%E5%BC%8F%E5%AD%A6%E4%B9%A0Tensorflow/"/>
-    <id>https://Bangood.github.io/blog/2017/11/22/2000003-求知-探索-实例式学习Tensorflow/</id>
-    <published>2017-11-22T07:47:09.000Z</published>
-    <updated>2017-11-22T07:52:47.977Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>毫无疑问，对于一个从来没有接触过AI的新手来说，要学习和掌握Tensorflow是一件茫然而浩瀚的长期过程。本着分享精神，我将带领大家一步一步的进入AI世界，了解并运用Tensorflow创建一个实际的项目工程。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;毫无疑问，对于一个从来没有接触过AI的新手来说，要学习和掌握Tensorflow是一件茫然而浩瀚的长期过程。本着分享精神，我将带领大家一步一
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Tensorflow学习小计</title>
-    <link href="https://Bangood.github.io/blog/2017/11/22/2000002-Tensorflow%E5%AD%A6%E4%B9%A0%E5%B0%8F%E8%AE%A1/"/>
-    <id>https://Bangood.github.io/blog/2017/11/22/2000002-Tensorflow学习小计/</id>
-    <published>2017-11-22T06:05:15.000Z</published>
-    <updated>2017-11-22T06:09:52.512Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h2><table>
-<thead>
-<tr>
-<th>名词</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>LSTM</code></td>
-<td>Long Short-Term Memory，长短期记忆网络，是一种时间递归神经网络，适合于处理和预测时间序列中间隔和延迟相对较长的重要事件。</td>
-</tr>
-</tbody>
-</table>
-<h2 id="Thanks"><a href="#Thanks" class="headerlink" title="Thanks"></a>Thanks</h2><p><a href="http://web.stanford.edu/class/cs20si/index.html" target="_blank" rel="external">CS 20SI: Tensorflow for Deep Learning Research</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;名词解释&quot;&gt;&lt;a href=&quot;#名词解释&quot; class=&quot;headerlink&quot; title=&quot;名词解释&quot;&gt;&lt;/a&gt;名词解释&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;名词&lt;/th&gt;
-&lt;th&gt;描述&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbod
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>FreeSWITCH控制台指令</title>
-    <link href="https://Bangood.github.io/blog/2017/11/15/2000001-FreeSWITCH%E6%8E%A7%E5%88%B6%E5%8F%B0%E6%8C%87%E4%BB%A4/"/>
-    <id>https://Bangood.github.io/blog/2017/11/15/2000001-FreeSWITCH控制台指令/</id>
-    <published>2017-11-15T09:21:17.000Z</published>
-    <updated>2017-11-23T08:58:33.868Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="控制台指令"><a href="#控制台指令" class="headerlink" title="控制台指令"></a>控制台指令</h2><table>
-<thead>
-<tr>
-<th>指令</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>sofia status profile internal</code></td>
-<td>列出某个Profile的状态</td>
-</tr>
-<tr>
-<td><code>sofia status profile internal reg</code></td>
-<td>列出某个Profile上所有已注册用户</td>
-</tr>
-<tr>
-<td><code>sofia status profile internal 1000</code></td>
-<td>过滤某些符合条件的用户</td>
-</tr>
-<tr>
-<td><code>sofia profile external rescan</code></td>
-<td>添加SIP网关后执行该命令，使新配置生效</td>
-</tr>
-<tr>
-<td><code>sofia status</code></td>
-<td>显示SIP网关注册状态</td>
-</tr>
-<tr>
-<td><code>reloadxml</code></td>
-<td>重新加载配置文件，使新配置生效</td>
-</tr>
-<tr>
-<td><code>global_getvar</code></td>
-<td>查看vars.xml加载前设置的全局变量</td>
-</tr>
-<tr>
-<td><code>sofia global siptrace on/off</code></td>
-<td>开启/关闭SIP消息打印</td>
-</tr>
-<tr>
-<td><code>show codec</code></td>
-<td>查看FreeSWITCH支持的编码类型</td>
-</tr>
-<tr>
-<td><code>sofia loglevel all 9</code></td>
-<td>开启详细的Sofia SIP 底层调试信息</td>
-</tr>
-</tbody>
-</table>
-<h2 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h2><table>
-<thead>
-<tr>
-<th>名词</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>IVR</code></td>
-<td>Interactive Voice Response，即互动式语音应答</td>
-</tr>
-<tr>
-<td><code>PBX</code></td>
-<td>Private Branch Exchange，用户级交换机</td>
-</tr>
-<tr>
-<td><code>PSTN</code></td>
-<td>Public Switched Telephone Network，公共交换电话网络</td>
-</tr>
-<tr>
-<td><code>SBC</code></td>
-<td>Session Border Controller，会话边界控制器</td>
-</tr>
-<tr>
-<td><code>FQDN</code></td>
-<td>Fully Qualified Domain Name，完全合格域名/全称域名</td>
-</tr>
-<tr>
-<td><code>LDAP</code></td>
-<td>Lightweight Directory Access Protocol，轻量目录访问协议</td>
-</tr>
-</tbody>
-</table>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;控制台指令&quot;&gt;&lt;a href=&quot;#控制台指令&quot; class=&quot;headerlink&quot; title=&quot;控制台指令&quot;&gt;&lt;/a&gt;控制台指令&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;指令&lt;/th&gt;
-&lt;th&gt;作用&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>个人简历</title>
-    <link href="https://Bangood.github.io/blog/2017/04/14/resume/"/>
-    <id>https://Bangood.github.io/blog/2017/04/14/resume/</id>
-    <published>2017-04-14T08:00:08.000Z</published>
-    <updated>2017-11-22T06:43:49.760Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><ul>
-<li>Nodejs ()<br>Proficiency in Javascript</li>
-</ul>
-<p>Thanks:</p>
-<p><a href="https://hexo.io" target="_blank" rel="external">Hexo</a>,<br>        <a href="https://github.com/" target="_blank" rel="external">GitHub</a>,<br>        <a href="https://jekyllrb.com/" target="_blank" rel="external">Jekyll</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;技术栈&quot;&gt;&lt;a href=&quot;#技术栈&quot; class=&quot;headerlink&quot; title=&quot;技术栈&quot;&gt;&lt;/a&gt;技术栈&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Nodejs ()&lt;br&gt;Proficiency in Javascript&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Thanks:
-    
-    </summary>
-    
-    
-      <category term="其他" scheme="https://Bangood.github.io/blog/tags/%E5%85%B6%E4%BB%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>辨析 Sass 中的 Map 和 List</title>
-    <link href="https://Bangood.github.io/blog/2015/10/21/demo/"/>
-    <id>https://Bangood.github.io/blog/2015/10/21/demo/</id>
-    <published>2015-10-21T02:34:12.000Z</published>
-    <updated>2017-11-02T03:14:21.688Z</updated>
-    
-    <content type="html"><![CDATA[<p>如果你使用过 Sass 3.3 之前的版本，那么你一定对那段时光颇有感触，那时候没有现如今这么好的条件，那时候的 Map 还只能用多重列表（lists of list）来模拟。多重列表可以实现复杂数据的嵌套定义，但却不是以键值对的形式实现的，所有当我们需要获取其中特定的某一项时就会比较麻烦。Map 这种数据类型天生就是基于键值对的形式，非常便于组织数据。</p>
-<p>自从可以使用 Map 之后，开发者们开始毫无顾忌地定义 Map 存储数据，比如断点宽度、颜色值、栅格布局等等响应式排版的细节，都被一股脑的塞进了 Map 中。</p>
-<p>那么，有了 Map 之后，我们还有必要使用 List 吗？可能某些人会觉得为了保持向后兼容应该继续使用多重列表模拟 Map，因为可能有些开发者仍然在使用老版本的 Sass 编译器，但实际上，这是多此一举了，Sass 的版本通常由 <code>package.json</code> 或者其他同类型的项目配置文件所控制，往往只需一条命令（<code>gem update sass</code>）即可更新 Sass 的版本，因此基本上无需考虑对老版本的兼容问题。</p>
-<a id="more"></a>
-<p>使用多重列表替代 Map 的优势之一就是减少代码量。下面让我们来比较一下多种列表和 Map 的语法结构以及遍历方式。</p>
-<h2 id="测试表格"><a href="#测试表格" class="headerlink" title="测试表格"></a>测试表格</h2><table>
-<thead>
-<tr>
-<th>Variable</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>site</code></td>
-<td>Sitewide information.</td>
-</tr>
-<tr>
-<td><code>page</code></td>
-<td>Page specific information and custom variables set in front-matter.</td>
-</tr>
-<tr>
-<td><code>config</code></td>
-<td>Site configuration</td>
-</tr>
-<tr>
-<td><code>theme</code></td>
-<td>Theme configuration. Inherits from site configuration.</td>
-</tr>
-<tr>
-<td><code>_</code> (single underscore)</td>
-<td><a href="http://lodash.com/" target="_blank" rel="external">Lodash</a> library</td>
-</tr>
-<tr>
-<td><code>path</code></td>
-<td>Path of current page</td>
-</tr>
-<tr>
-<td><code>url</code></td>
-<td>Full URL of current page</td>
-</tr>
-<tr>
-<td><code>env</code></td>
-<td>Environment variables</td>
-</tr>
-</tbody>
-</table>
-<h2 id="语法比较"><a href="#语法比较" class="headerlink" title="语法比较"></a>语法比较</h2><div class="note"><br>    <h5>测试标题</h5><br>    <p>在下面的示例中，我创建了一个用于控制响应式布局的数据，该数据一共有四个断点，每一个断点都包含了 <code>min-width</code>、<code>max-width</code>、<code>font-size</code> 和 <code>line-height</code> 四个样式。</p><br></div>
-
-<h4 id="Map-语法"><a href="#Map-语法" class="headerlink" title="Map 语法"></a>Map 语法</h4><p>下面就是使用 Map 存储的数据，具体来说，该 Map 中首先存储了四个用于标识断点的 Key，相对应的是保存具体属性值得 Value。虽然这种形式可读性更高，但是总体代码量却高达 26 行 450 个字符。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">$breakpoint-map: (</div><div class="line">    small: (</div><div class="line">        min-width: null,</div><div class="line">        max-width: 479px,</div><div class="line">        base-font: 16px,</div><div class="line">        vertical-rhythm: 1.3</div><div class="line">    ),</div><div class="line">    medium: (</div><div class="line">        min-width: 480px,</div><div class="line">        max-width: 959px,</div><div class="line">        base-font: 18px,</div><div class="line">        vertical-rhythm: 1.414</div><div class="line">    ),</div><div class="line">    large: (</div><div class="line">        min-width: 960px,</div><div class="line">        max-width: 1099px,</div><div class="line">        base-font: 18px,</div><div class="line">        vertical-rhythm: 1.5</div><div class="line">    ),</div><div class="line">    xlarge: (</div><div class="line">        min-width: 1100px,</div><div class="line">        max-width: null,</div><div class="line">        base-font: 21px,</div><div class="line">        vertical-rhythm: 1.618</div><div class="line">    )</div><div class="line">);</div></pre></td></tr></table></figure>
-<h4 id="多重列表语法"><a href="#多重列表语法" class="headerlink" title="多重列表语法"></a>多重列表语法</h4><p>下面的多重列表存储了和上面 Map 同样的数据，在多重列表中没有 Key-Value 的对应关系，这意味着要想找到特定的值，必须使用遍历或 <code>nth()</code> 的方式来实现了。从另一个角度来看，多种列表又比 Map 的代码量小得多，总共只有六行 180 个字符。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$breakpoint-list: (</div><div class="line">    (small, null, 479px, 16px, 1.3),</div><div class="line">    (medium, 480px, 959px, 18px, 1.414),</div><div class="line">    (large, 960px, 1099px, 18px, 1.5),</div><div class="line">    (xlarge, 1100px, null, 21px, 1.618)</div><div class="line">);</div></pre></td></tr></table></figure>
-<h2 id="遍历比较"><a href="#遍历比较" class="headerlink" title="遍历比较"></a>遍历比较</h2><div class="note info"><br>    <h5>测试标题</h5><br>    <p>从上面简单地比较中可以粗略的看出，多种列表的代码量明显少于 Map。但是，如果我们需要遍历这些值得话，复杂度又是怎样的呢？</p><br></div>
-
-<h4 id="遍历-Map"><a href="#遍历-Map" class="headerlink" title="遍历 Map"></a>遍历 Map</h4><p>我们可以使用如下的代码遍历 Map：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">@each $label, $map in $breakpoint-map &#123;&#125;</div></pre></td></tr></table></figure>
-<p>这里的变量 <code>$label</code> 和 <code>$map</code> 会随着对 <code>$breakpoint-map</code> 的遍历被动态地赋值，<code>$label</code> 将会被赋值为 <code>$breakpoint-map</code> 的 Key，而 <code>$map</code> 会被赋值为 <code>$breakpoint-map</code> 的 Value。为了在遍历过程中获取特定值，我们就需要使用 Sass 原生的 <code>map-get()</code> 函数，使用该函数需要传入两个参数：Map 的名字和求取的 Key，最后返回该 Map 中匹配该 Key 的 Value。</p>
-<p>具体的做法就是使用 <code>@each</code> 遍历 Map，然后使用 <code>map-get()</code> 获取特定值，最终只需要六行代码 220 个字符即可完成整个遍历：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">@each $label, $map in $breakpoint-map &#123;</div><div class="line">    $min-width: map-get($map, min-width);</div><div class="line">    $max-width: map-get($map, max-width);</div><div class="line">    $base-font: map-get($map, base-font);</div><div class="line">    $vertical-rhythm: map-get($map, vertical-rhythm);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="遍历多重列表"><a href="#遍历多重列表" class="headerlink" title="遍历多重列表"></a>遍历多重列表</h4><p>遍历多重列表不必像遍历 Map 一样动态获取到 Map 后再使用 <code>map-get()</code> 函数取特定值，直接遍历一遍即可获得特定值。</p>
-<p>因为多种列表内层的每一个列表结构相同，都有按照相同顺序排列的五个值，所以我们可以持续遍历每个值并赋值给特定的变量。无需调用 <code>map-get()</code>，直接引用这些变量即可进行赋值等裸机操作。最终遍历多重列表只使用了两行代码 100 个字符：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">@each $label, $min-width, $max-width, $base-font, $vertical-rhythm in $breakpoint-list &#123;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="慎用多重列表"><a href="#慎用多重列表" class="headerlink" title="慎用多重列表"></a>慎用多重列表</h2><div class="note warning"><br>    <h5>测试标题</h5><br>    <p>经过上述的比对，看起来多重列表各方面都在碾压 Map，实则不然，Sass 中添加 Map 有一条非常重要的原因就是：Key-Value 的映射关系。</p><br></div>
-
-<h4 id="遗漏键值"><a href="#遗漏键值" class="headerlink" title="遗漏键值"></a>遗漏键值</h4><p>如果要使用多重列表，那么就必须保证自己非常熟悉多重列表内部的每一项所代表的意义。下面我们举个例子，来看看遗漏了某些值的情况：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">$breakpoint-list: (</div><div class="line">    (small, null, 479px, 16px, 1.3),</div><div class="line">    (medium, 480px, 959px, 18px, 1.414),</div><div class="line">    (large, 960px, 1099px, 18px, 1.5),</div><div class="line">    (xlarge, 1100px, 21px, 1.618)</div><div class="line">);</div><div class="line"></div><div class="line">p &#123;</div><div class="line">    @each $label, $min-width, $max-width, $base-font, $vertical-rhythm in $breakpoint-list &#123;</div><div class="line">        @if $min-width &#123;</div><div class="line">            @include breakpoint( $min-width ) &#123;</div><div class="line">                font-size: $base-font;</div><div class="line">                line-height: $vertical-rhythm;</div><div class="line">            &#125;</div><div class="line">        &#125; @else &#123;</div><div class="line">            font-size: $base-font;</div><div class="line">            line-height: $vertical-rhythm;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>当我们尝试运行这段代码时，结果肯定是错误地，因为在 <code>$breakpoint-list</code> 的最后一行，<code>xlarge</code> 被赋值给了 <code>$label</code>，<code>1100px</code> 被赋值给了 <code>$min-width</code>，<code>21px</code> 被赋值给了 <code>$max-width</code>, <code>1.618</code> 被赋值给了 <code>$base-font</code>，最终导致 <code>$vertical-rhythm</code> 没有被赋值，结果就是 <code>font-size</code> 的属性值是错的，<code>line-height</code> 的属性值是空的。此外，Sass 还不会对此抛出错误，导致我们无从知晓错误所在。</p>
-<p>如果我们使用 Map 来代替这里的多重列表，那么使用 <code>map-get()</code> 函数即使遇见空值也能正确获得想要的结果。这就是值得我们慎重思考的地方：多种列表虽然简单快速，但是丧失了 Map 中的容错能力和快速取值能力。</p>
-<h4 id="查找特定列表"><a href="#查找特定列表" class="headerlink" title="查找特定列表"></a>查找特定列表</h4><p>在多重列表中查找特定列表简直就是一种折磨。如果使用 Map，那么配合 <code>map-get()</code> 函数可以快速定位到特定子 Map：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$medium-map: map-get($maps, medium);</div></pre></td></tr></table></figure>
-<p>但如果要获取多种列表 <code>medium</code> 列表，麻烦可就大了：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">@function get-list($label) &#123;</div><div class="line">    @each $list in $breakpoint-list &#123;</div><div class="line">        @if nth($list, 1) == $label &#123;</div><div class="line">            @return $list;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    @return null;</div><div class="line">&#125;</div><div class="line">$medium-list: get-list(medium);</div></pre></td></tr></table></figure>
-<p>这段代码的逻辑就是遍历整个多重列表，知道找到第一个匹配项，然后返回，如果一直没有找到匹配项，就一直遍历到末尾，然后返回 <code>null</code>。这实际上就是手工实现了 <code>map-get()</code> 的逻辑。</p>
-<h4 id="缺少原生的-Map-函数"><a href="#缺少原生的-Map-函数" class="headerlink" title="缺少原生的 Map 函数"></a>缺少原生的 Map 函数</h4><p>Sass 提供了诸多的原生函数用于处理 Map 数据类型，但是多重列表是没法调用这些函数的，比如，使用 <code>map-merge()</code> 可以合并两个 Map，如果两个 Map 有相同的值，则取第二个 Map 的值为最终值。当然你也可以在多重列表中使用 <code>join()</code> 或 <code>append()</code> 来增加新列表，从而模拟出 <code>map-merge()</code> 的效果。</p>
-<p>另一个实用的 Map 函数就是 <code>map-has-key()</code>，对于依赖 <code>map-get()</code> 的自定义函数来说，<code>map-has-key()</code> 可以用来验证特定的 Key 是否存在。但在列表中是完全没有相似的方法。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><div class="note unreleased"><br>    <h5>Test Title</h5><br>    <p>相比起列表来说，Key-Value 模型的 Map 显然更有力量，原生的 Sass Map 函数更是提供了强力的数据查找和验证工具。</p><br></div>
-
-<p>虽然多重列表代码量少，但并不能像 Map 一样进行错误检查或验证参数。在大多数时候，相比较多重列表而言，我相信 Map 是更好的选择。如果是为了更少的代码量和其他简单地调用，那么我偶尔会用用多重列表，但是从项目的宏观控制和数据存储方面显然更优秀。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;如果你使用过 Sass 3.3 之前的版本，那么你一定对那段时光颇有感触，那时候没有现如今这么好的条件，那时候的 Map 还只能用多重列表（lists of list）来模拟。多重列表可以实现复杂数据的嵌套定义，但却不是以键值对的形式实现的，所有当我们需要获取其中特定的某一项时就会比较麻烦。Map 这种数据类型天生就是基于键值对的形式，非常便于组织数据。&lt;/p&gt;
-&lt;p&gt;自从可以使用 Map 之后，开发者们开始毫无顾忌地定义 Map 存储数据，比如断点宽度、颜色值、栅格布局等等响应式排版的细节，都被一股脑的塞进了 Map 中。&lt;/p&gt;
-&lt;p&gt;那么，有了 Map 之后，我们还有必要使用 List 吗？可能某些人会觉得为了保持向后兼容应该继续使用多重列表模拟 Map，因为可能有些开发者仍然在使用老版本的 Sass 编译器，但实际上，这是多此一举了，Sass 的版本通常由 &lt;code&gt;package.json&lt;/code&gt; 或者其他同类型的项目配置文件所控制，往往只需一条命令（&lt;code&gt;gem update sass&lt;/code&gt;）即可更新 Sass 的版本，因此基本上无需考虑对老版本的兼容问题。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="css" scheme="https://Bangood.github.io/blog/tags/css/"/>
     
   </entry>
   
