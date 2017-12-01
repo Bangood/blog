@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="zh-cn"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> FreeSWITCH控制台指令 · 风雨楼</title><meta name="description" content="javascript | Bangood's blog"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/blog/favicon.png"><link rel="stylesheet" href="/blog/css/jekyll.css"><!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]--></head><body><header class="row-flex-row limit-width vh-center"><a href="/blog/" class="logo"><img src="/blog/favicon.png"></a><nav><ul class="nav-list"><li class="nav-list-item"><a href="/blog/" class="nav-link">主页</a></li><li class="nav-list-item"><a href="/blog/archives/" class="nav-link active">   博客</a></li><li class="nav-list-item"><a href="https://github.com/Bangood" target="_blank" class="nav-link">github</a></li></ul></nav></header><div class="container limit-width"><section class="row-flex-row"><div class="post"><article class="post-block"><h2 class="post-title"><a href="/blog/2017/11/15/2000001-FreeSWITCH控制台指令/" class="post-title-link">FreeSWITCH控制台指令</a></h2><div class="post-meta"><div class="post-time">2017年11月15日 星期三</div></div><div class="post-content"><h2 id="控制台指令"><a href="#控制台指令" class="headerlink" title="控制台指令"></a>控制台指令</h2><table>
+<thead>
+<tr>
+<th>指令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sofia status profile internal</code></td>
+<td>列出某个Profile的状态</td>
+</tr>
+<tr>
+<td><code>sofia status profile internal reg</code></td>
+<td>列出某个Profile上所有已注册用户</td>
+</tr>
+<tr>
+<td><code>sofia status profile internal 1000</code></td>
+<td>过滤某些符合条件的用户</td>
+</tr>
+<tr>
+<td><code>sofia profile external rescan</code></td>
+<td>添加SIP网关后执行该命令，使新配置生效</td>
+</tr>
+<tr>
+<td><code>sofia status</code></td>
+<td>显示SIP网关注册状态</td>
+</tr>
+<tr>
+<td><code>reloadxml</code></td>
+<td>重新加载配置文件，使新配置生效</td>
+</tr>
+<tr>
+<td><code>global_getvar</code></td>
+<td>查看vars.xml加载前设置的全局变量</td>
+</tr>
+<tr>
+<td><code>sofia global siptrace on/off</code></td>
+<td>开启/关闭SIP消息打印</td>
+</tr>
+<tr>
+<td><code>show codec</code></td>
+<td>查看FreeSWITCH支持的编码类型</td>
+</tr>
+<tr>
+<td><code>sofia loglevel all 9</code></td>
+<td>开启详细的Sofia SIP 底层调试信息</td>
+</tr>
+</tbody>
+</table>
+<h2 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h2><table>
+<thead>
+<tr>
+<th>名词</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>IVR</code></td>
+<td>Interactive Voice Response，即互动式语音应答</td>
+</tr>
+<tr>
+<td><code>PBX</code></td>
+<td>Private Branch Exchange，用户级交换机</td>
+</tr>
+<tr>
+<td><code>PSTN</code></td>
+<td>Public Switched Telephone Network，公共交换电话网络</td>
+</tr>
+<tr>
+<td><code>SBC</code></td>
+<td>Session Border Controller，会话边界控制器</td>
+</tr>
+<tr>
+<td><code>FQDN</code></td>
+<td>Fully Qualified Domain Name，完全合格域名/全称域名</td>
+</tr>
+<tr>
+<td><code>LDAP</code></td>
+<td>Lightweight Directory Access Protocol，轻量目录访问协议</td>
+</tr>
+</tbody>
+</table>
+</div></article><div class="pagination"><a href="/blog/2017/11/22/2000002-Tensorflow学习小计/" class="pagination-prev">PREV</a><a href="/blog/2017/04/14/resume/" class="pagination-next">NEXT</a></div><div class="comments"></div></div><aside class="sidebar"><h3>分类标签</h3><ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/Angular5/">Angular5</a></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/css/">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/其他/">其他</a></li></ul><h3>最新文章</h3><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/blog/2017/12/01/2000004-实例式探索Angular5最佳实践/">实例式探索Angular5最佳实践</a></li><li class="post-list-item"><a class="post-list-link" href="/blog/2017/11/22/2000003-求知-探索-实例式学习Tensorflow/">求知-探索-实例式学习Tensorflow</a></li><li class="post-list-item"><a class="post-list-link" href="/blog/2017/11/22/2000002-Tensorflow学习小计/">Tensorflow学习小计</a></li><li class="post-list-item"><a class="post-list-link" href="/blog/2017/11/15/2000001-FreeSWITCH控制台指令/">FreeSWITCH控制台指令</a></li><li class="post-list-item"><a class="post-list-link" href="/blog/2017/04/14/resume/">个人简历</a></li><li class="post-list-item"><a class="post-list-link" href="/blog/2015/10/21/demo/">辨析 Sass 中的 Map 和 List</a></li></ul></aside></section></div><div class="extra"></div><footer class="footer"><div class="row-flex-row limit-width vh-center"><div class="copyright"><P>© 2017 <a href="/">Bangood</P></div><div class="power"><p></p></div></div></footer><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-80781234-1",'auto');ga('send','pageview');</script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?ee75cf111111aa99f8540efa2570970";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></body></html>
